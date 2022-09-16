@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="NewsCollectionViewCell" customModule="NewsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="165" height="223"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="165" height="223"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gxx-UL-w3q">
+                        <rect key="frame" x="0.0" y="0.0" width="165" height="223"/>
+                        <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="cornerRadius" value="10"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iphone" translatesAutoresizingMaskIntoConstraints="NO" id="teD-Uk-jxS">
+                        <rect key="frame" x="0.0" y="0.0" width="165" height="112"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yeni iphone 14 tanıtıldı hemen incele" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AiB-Ve-sc7">
+                        <rect key="frame" x="8" y="116.99999999999999" width="149" height="57.333333333333329"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15.09.2022" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdd-OZ-sW4">
+                        <rect key="frame" x="8" y="201" width="56" height="12"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
+                        <color key="textColor" name="CategoryTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="AiB-Ve-sc7" secondAttribute="trailing" constant="8" id="905-iJ-Gtn"/>
+                <constraint firstItem="AiB-Ve-sc7" firstAttribute="top" secondItem="teD-Uk-jxS" secondAttribute="bottom" constant="5" id="91o-Nj-ZbV"/>
+                <constraint firstAttribute="bottom" secondItem="jdd-OZ-sW4" secondAttribute="bottom" constant="10" id="AnY-Wf-Mtf"/>
+                <constraint firstItem="AiB-Ve-sc7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="GeB-Nu-sOb"/>
+                <constraint firstAttribute="trailing" secondItem="teD-Uk-jxS" secondAttribute="trailing" id="Gng-EZ-iRw"/>
+                <constraint firstItem="teD-Uk-jxS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="H0a-AT-BOh"/>
+                <constraint firstAttribute="trailing" secondItem="gxx-UL-w3q" secondAttribute="trailing" id="SHc-ys-bA5"/>
+                <constraint firstItem="teD-Uk-jxS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ju2-iq-xJc"/>
+                <constraint firstItem="gxx-UL-w3q" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="nVi-9B-Sfr"/>
+                <constraint firstAttribute="bottom" secondItem="gxx-UL-w3q" secondAttribute="bottom" id="qbx-cw-IhA"/>
+                <constraint firstItem="jdd-OZ-sW4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="sK7-XO-95I"/>
+                <constraint firstItem="gxx-UL-w3q" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="tuG-cu-hZ9"/>
+            </constraints>
+            <size key="customSize" width="165" height="223"/>
+            <connections>
+                <outlet property="bgView" destination="gxx-UL-w3q" id="owG-HA-dTs"/>
+                <outlet property="imageView" destination="teD-Uk-jxS" id="6MK-Qx-jMR"/>
+                <outlet property="newsDate" destination="jdd-OZ-sW4" id="MtK-ee-0lP"/>
+                <outlet property="newsTitle" destination="AiB-Ve-sc7" id="hp4-2P-pk1"/>
+            </connections>
+            <point key="canvasLocation" x="219.23076923076923" y="50.11848341232227"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="iphone" width="165" height="112"/>
+        <namedColor name="CategoryTextColor">
+            <color red="0.63899999856948853" green="0.63899999856948853" blue="0.63899999856948853" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
