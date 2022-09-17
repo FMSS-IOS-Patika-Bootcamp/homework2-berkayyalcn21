@@ -1,17 +1,37 @@
-# HomeWork2
-İkinci Ödev
-
-          Haber Uygulaması
-- İlk sayfada Haberler Listelenicek.
-- Haberler   TableView yada # CollecitionView ile gösterilecek.
-- Habere tıklanınca  ilgili Haberin detay sayfası acılıcak.
-- Geçişler  Navigation Controller ile gerçekleştirilicek.
-- Haber Detayına gecerken Struct gönderip. Detay sayfasında Navigation Title bu structan alınıcak.
-- Detay sayfasındaki Description ( Açıklama ) bölümü gönderdiğimiz Streuctan alınıcak.
-- Detay sayfasının Description ( Acıklama ) bölümüne 20 px aralık ile Bir buton konumlandırılıcak. 
-- Detay sayfasındaki Butona bastığımızda 3. bir ekrana gidilicek.
-- 3. Ekranımızda Webview olucak ve ilgili Habere yönlendirilicek ( Burada istediğiniz siteye yönlendirme yapabilirsiniz Dumyy Haberlerle çalışıcaksınız. Örnek: https://www.google.com.tr/  )
+# FMSS-Homework-2
 
 
-# CollectionView da bir row da 2 ve daha fazla Haber gösterebilen extra puan alıcaktır.
-- İsteyen Uygulamasını Icon Koyabilir.
+
+### 223. FMSS Bilişim iOS Swift Bootcamp - News App
+
+![Simulator](https://github.com/FMSS-IOS-Patika-Bootcamp/homework2-berkayyalcn21/blob/main/images/appLogo.png)
+
+#### Description
+- With this application, you can view the current news and examine its details.
+- The design was made over the Figma application and transferred to the code.
+- Figma App Desing Link: https://www.figma.com/file/wJJ1jhqpbXpPuDoRFWhhb4/News-App?node-id=0%3A1
+- You can download and run the project
+
+### with iphone 11
+
+![Simulator](https://github.com/FMSS-IOS-Patika-Bootcamp/homework2-berkayyalcn21/blob/main/images/5.png)
+![Simulator](https://github.com/FMSS-IOS-Patika-Bootcamp/homework2-berkayyalcn21/blob/main/images/6.png)
+
+### with iphone 11
+
+![Simulator](https://github.com/FMSS-IOS-Patika-Bootcamp/homework2-berkayyalcn21/blob/main/images/7.png)
+![Simulator](https://github.com/FMSS-IOS-Patika-Bootcamp/homework2-berkayyalcn21/blob/main/images/8.png)
+
+### Tools
+
+- Swift
+  - Delegate
+  - POP
+  - OOP
+  - Navigation Controller
+  - Date
+- UIKit
+  - CollectionView
+  - WebKit
+  - SearchBar
+       
