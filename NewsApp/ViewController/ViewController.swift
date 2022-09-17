@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // First screen gif settings
         let gif = UIImage.gifImageWithName("brain")
         imageView.image = gif
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {

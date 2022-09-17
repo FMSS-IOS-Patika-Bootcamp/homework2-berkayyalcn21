@@ -83,9 +83,6 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20"/>
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
-                                <connections>
-                                    <action selector="settingsButtonTapped:" destination="asY-xi-5KW" eventType="touchUpInside" id="v67-YN-XG7"/>
-                                </connections>
                             </button>
                             <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Bir şeyler ara" translatesAutoresizingMaskIntoConstraints="NO" id="1Gg-a8-zf6">
                                 <rect key="frame" x="0.0" y="118" width="390" height="56"/>
@@ -279,6 +276,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="HWb-Ud-m5a"/>
                         <color key="backgroundColor" name="Bg Color"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="Yrg-et-IyX" secondAttribute="trailing" constant="11.33" id="6ZL-tz-3W2"/>
@@ -369,7 +367,7 @@
             <color red="0.89800000190734863" green="0.27799999713897705" blue="0.35699999332427979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Main Color">
-            <color red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.98000001907348633" green="0.98000001907348633" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

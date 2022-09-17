@@ -17,6 +17,7 @@ class WebKitVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // Data transfer url control and settings
         if url != nil {
             let myURL = URL(string: url!)
             webView.load(URLRequest(url: myURL!))

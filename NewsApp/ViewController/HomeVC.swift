@@ -7,6 +7,7 @@
 
 import UIKit
 
+// Data transfer HomeVC to DetailVC
 protocol DataTransferToDetails {
     func newsData(news: NewsModel)
 }
@@ -15,6 +16,7 @@ class HomeVC: UIViewController {
 
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     @IBOutlet weak var newsCollectionView: UICollectionView!
+    // For category collectionView
     let categories: [String] = ["Tümü", "Politika", "Spor", "Teknoloji", "Bilim"]
     private let categoryCellIdentifier = "categoryCellIdentifier"
     private let newsCellIdentifier = "newsCellIdentifier"
@@ -32,18 +34,16 @@ class HomeVC: UIViewController {
         registerCells()
     }
     
+    // CollectionView cells register
     private func registerCells() {
         categoryCollectionView.register(.init(nibName: "CategoryCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: categoryCellIdentifier)
         newsCollectionView.register(.init(nibName: "NewsCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: newsCellIdentifier)
     }
-    
-    @IBAction func settingsButtonTapped(_ sender: Any) {
-    }
-    
 }
 
-
+// CollectionView Delegate Implement
 extension HomeVC: UICollectionViewDelegate {
+    // When tapped to cell
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == categoryCollectionView {
             index = indexPath.row
@@ -59,8 +59,10 @@ extension HomeVC: UICollectionViewDelegate {
     }
 }
 
+// CollectionView DataSource Implement
 extension HomeVC: UICollectionViewDataSource {
     
+    // As many rows as the number of lists
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == categoryCollectionView {
             return categories.count
@@ -68,6 +70,7 @@ extension HomeVC: UICollectionViewDataSource {
         return News.newsList.count
     }
     
+    // Line content
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == categoryCollectionView {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: categoryCellIdentifier, for: indexPath) as! CategoryCollectionViewCell
@@ -92,8 +95,10 @@ extension HomeVC: UICollectionViewDataSource {
     }
 }
 
+// CollectionView size settings
 extension HomeVC: UICollectionViewDelegateFlowLayout {
     
+    // Edge dimensions size settings
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         if collectionView == categoryCollectionView {
             return .zero
@@ -101,6 +106,7 @@ extension HomeVC: UICollectionViewDelegateFlowLayout {
         return UIEdgeInsets(top: 10, left: 15, bottom: 20, right: 15)
     }
     
+    // Binary alignment size settings
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if collectionView == categoryCollectionView {
             return .init(width: 90, height: 41)
@@ -108,6 +114,7 @@ extension HomeVC: UICollectionViewDelegateFlowLayout {
         return .init(width: (collectionView.frame.width - 40) / 2, height: 223)
     }
     
+    // Line gap size settings
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         if collectionView == categoryCollectionView {
             return .zero
