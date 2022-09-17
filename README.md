@@ -22,10 +22,6 @@
 ![Simulator](https://github.com/FMSS-IOS-Patika-Bootcamp/homework2-berkayyalcn21/blob/main/images/7.png)
 ![Simulator](https://github.com/FMSS-IOS-Patika-Bootcamp/homework2-berkayyalcn21/blob/main/images/8.png)
 
-### Gif
-
-![brain](https://user-images.githubusercontent.com/77504006/190864535-33b956a1-5c2e-4ca4-bdaf-b922b435f863.gif)
-
 ### Tools
 
 - Swift
