@@ -17,7 +17,7 @@
 ![Simulator](https://github.com/FMSS-IOS-Patika-Bootcamp/homework2-berkayyalcn21/blob/main/images/5.png)
 ![Simulator](https://github.com/FMSS-IOS-Patika-Bootcamp/homework2-berkayyalcn21/blob/main/images/6.png)
 
-### with iphone 11
+### with iphone 8
 
 ![Simulator](https://github.com/FMSS-IOS-Patika-Bootcamp/homework2-berkayyalcn21/blob/main/images/7.png)
 ![Simulator](https://github.com/FMSS-IOS-Patika-Bootcamp/homework2-berkayyalcn21/blob/main/images/8.png)
@@ -34,4 +34,5 @@
   - CollectionView
   - WebKit
   - SearchBar
+  - Auto Layout
        
