@@ -22,6 +22,10 @@
 ![Simulator](https://github.com/FMSS-IOS-Patika-Bootcamp/homework2-berkayyalcn21/blob/main/images/7.png)
 ![Simulator](https://github.com/FMSS-IOS-Patika-Bootcamp/homework2-berkayyalcn21/blob/main/images/8.png)
 
+### video slayt
+
+![Simulator](https://github.com/FMSS-IOS-Patika-Bootcamp/homework2-berkayyalcn21/blob/main/images/NewsApp-1.mov)
+
 ### Tools
 
 - Swift
